@@ -1,0 +1,30 @@
+<div class="about-page">
+    <div class="about-content">
+        <div class="about-text">
+            <div *ngIf="about.title" class="title">
+                <h1>{{about.title}}</h1>
+            </div>
+            <div *ngIf="about.biography1" class="biography1">
+                <div [innerHTML]="about.biography1.html" ></div>
+            </div>
+        </div>
+        <div *ngIf="about.headshot" class="about-image">
+            <img [src]="about.headshot.url">
+        </div>
+    </div>
+    <div class="mobile-about-content">
+        <div *ngIf="about.title" class="title">
+            <h1>{{about.title}}</h1>
+        </div>
+        <div *ngIf="about.headshot" class="about-image">
+            <img [src]="about.headshot.url">
+        </div>
+        <div *ngIf="about.biography1" class="biography1">
+            <div [innerHTML]="about.biography1.html" ></div>
+        </div>
+    </div>
+    <div *ngIf="about.biography2" class="biography2">
+        <div [innerHTML]="about.biography2.html" ></div>
+    </div>
+    <app-footer></app-footer>
+</div>

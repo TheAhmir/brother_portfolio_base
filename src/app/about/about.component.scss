@@ -1,0 +1,101 @@
+.about-page {
+}
+
+.about-content {
+    display: flex;
+    height: 100%;
+    padding: 2rem;
+}
+
+.about-text {
+    width: 60%;
+    .title {
+        font-size: x-large;
+        padding-bottom: 1rem;
+    }
+
+    .biography1 {
+        font-size: x-large;
+        padding-bottom: 1rem;
+
+        .skills {
+            font-size: large;
+            padding: 5px;
+        }
+
+        .hobbies {
+            padding-top: 5px;
+        }
+    }
+}
+
+.about-image {
+    width: 40%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.biography2 {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    font-size: large;
+
+    .caption-title{
+        font-size: larger;
+    }
+
+    .caption-title {
+        font-weight: 500;
+    }
+
+    .quote {
+        margin-right: 2rem;
+    }
+
+    .author {
+        margin-left: 6rem;
+    }
+}
+
+.mobile-about-content {
+    display: none;
+    padding: 2rem;
+    padding-top: 8rem;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        display: none;
+    }
+
+    .mobile-about-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .about-image {
+            margin-bottom: 2rem;
+
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+
+    .biography2 {
+        justify-content: center;
+        font-size: small;
+        padding: 2rem;
+    }
+
+}

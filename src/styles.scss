@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+/* Colors and basic styles */
+$colorscheme: (
+  'bkg-gray': #cfcfcf,
+  'bkg-white': whitesmoke
+);
+
+:root {
+  --nav-background: #cfcfcf;
+}
+
+html, main {
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+html, body {
+  min-height: 100%;
+  margin: 0;
+  background-color: var(--nav-background);
+}
+
+

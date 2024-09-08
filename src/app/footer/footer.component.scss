@@ -1,0 +1,54 @@
+.footer-background {
+    width: 110%;
+    bottom: 0;
+    left: 0;
+    border-top: 2px solid rgb(10, 10, 10);
+    background-color: var(--nav-background);
+    transform: translate(-10px, 50px);
+    position: relative;
+    z-index: 10;
+}
+
+.footer-component {
+    width: 90%;
+    overflow-y: scroll;
+
+    .content {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+        .icon-row {
+            display: flex;
+            gap: 6rem;
+        }
+
+
+        .icon {
+            padding: 1rem;
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .icon:hover {
+            transform: scale(1.25);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-component {
+        width: 90%;
+        overflow: hidden;
+        justify-content: center;
+        
+
+        .content {
+
+            .icon-row {
+                gap: 1rem;
+            }
+        }
+    }
+}

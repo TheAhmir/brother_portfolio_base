@@ -1,0 +1,77 @@
+<div class="nav-all">
+    <div class="nav-background">
+        <div class="nav-component">
+            <div class="nav-text">
+                <h1>Ahmad Postell's Game Design Portfolio</h1>
+                <div class="nav-items">
+                    <div class="nav-link">
+                      <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">
+                          <h2>Porfolio</h2>
+                        </a>
+                    </div>
+                    <div class="nav-link">
+                        <a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">
+                            <h2>About</h2>
+                          </a>
+                      </div>
+                    <div class="nav-link">
+                        <a routerLink="/resume" routerLinkActive="active" ariaCurrentWhenActive="page">
+                            <h2>Resume</h2>
+                          </a>
+                      </div>
+                    <div class="nav-link">
+                        <a routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page">
+                            <h2>Contact</h2>
+                          </a>
+                    </div>
+                  </div>
+            </div>
+            <div class="logo-container">
+                <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">
+                    <picture class="nav-logo">
+                        <source type="image/webp" srcset="assets/images/DripGodMod_NoName.webp">
+                        <img src="assets/images/DripGodMod_NoName.jpg" alt="DripGodMod Image" loading="lazy">
+                    </picture>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-nav">
+        <div class="mobile-nav-header">
+            <div class="mobile-nav-title">
+                <p>DripGodMod's Game Design Portfolio</p>
+            </div>
+            <div class="mobile-nav-button">
+                <div class="mobile-nav-button-svg">
+                    <svg (click)="moveMenu()" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#000000" fill-rule="evenodd" d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"></path> </g></svg>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav-content" [ngClass]="{'moveMenu' : isMoveMenu}">
+            <div>
+                <div class="nav-items">
+                    <div class="nav-link">
+                      <a (click)="moveMenu()" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">
+                          <h2>Porfolio</h2>
+                        </a>
+                    </div>
+                    <div class="nav-link">
+                        <a (click)="moveMenu()" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">
+                            <h2>About</h2>
+                          </a>
+                      </div>
+                    <div class="nav-link">
+                        <a (click)="moveMenu()" routerLink="/resume" routerLinkActive="active" ariaCurrentWhenActive="page">
+                            <h2>Resume</h2>
+                          </a>
+                      </div>
+                    <div class="nav-link">
+                        <a (click)="moveMenu()" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page">
+                            <h2>Contact</h2>
+                          </a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>

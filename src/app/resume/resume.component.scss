@@ -1,0 +1,124 @@
+.resume-page {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title-row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-right: 8rem;
+
+        .resume-title {
+            font-size: xx-large;
+            text-decoration:line-through;
+        }
+
+        .resume-fun {
+            color:brown
+        }
+    }
+
+    .resume-download {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        padding-right: 32rem;
+        margin-bottom: 4rem;
+
+    }
+
+    .resume-download-button {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        border: 1px dotted black;
+        border-radius: 10px;
+        text-decoration: none;
+        color: black;
+
+        svg {
+            fill: black;
+        }
+    }
+
+    .resume-download-button:hover {
+        border: none;
+        background-color:cornflowerblue;
+        color: white;
+
+        svg {
+            fill: white;
+        }
+    }
+
+    .resume {
+        width: 800px;
+        height: 800px;
+        object-fit: contain;
+        
+    }
+}
+
+.mobile-resume-page {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .resume-page {
+        display: none;
+    }
+
+    .mobile-resume-page {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12rem;
+        margin-bottom: 32rem;
+
+        .title-row {
+            .resume-fun {
+                display: none;
+            }
+        }
+
+    }
+
+
+    .resume-download-button {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        border: 1px dotted black;
+        border-radius: 10px;
+        text-decoration: none;
+        color: black;
+
+        svg {
+            fill: black;
+        }
+    }
+
+    .resume-download-button:hover {
+        border: none;
+        background-color:cornflowerblue;
+        color: white;
+
+        svg {
+            fill: white;
+        }
+    }
+}
