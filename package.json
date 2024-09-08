@@ -19,6 +19,7 @@
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
     "@apollo/client": "^3.0.0",
+    "@ngx-env/builder": "^18.0.1",
     "apollo-angular": "^7.1.2",
     "graphql": "^16",
     "ng2-pdf-viewer": "^10.3.0",
