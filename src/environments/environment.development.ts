@@ -1,4 +1,4 @@
 export const environment = {
     production: false,
-    graphqlApiUrl: process.env['API_URL'],
+    graphqlApiUrl: process.env["NG_APP_API_URL"]
 };
