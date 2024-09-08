@@ -90,10 +90,15 @@
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1320px) {
     .project-video {
         width: 400px;
         height: 300px;
+    }
+
+    .img {
+        width: 200px;
+        height: 150px
     }
 }
 
