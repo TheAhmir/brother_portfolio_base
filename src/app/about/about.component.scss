@@ -72,7 +72,7 @@
     padding-top: 8rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1230px) {
     .about-content {
         display: none;
     }
@@ -97,6 +97,10 @@
         justify-content: center;
         font-size: small;
         padding: 2rem;
+
+        .quote {
+            margin-right: 4rem;
+        }
     }
 
 }
