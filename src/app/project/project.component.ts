@@ -3,11 +3,12 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { Project } from '../../models/project';
 import { CommonModule } from '@angular/common';
 import { BackendService } from '../backend.service';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-project',
   standalone: true,
-  imports: [CommonModule],
+  imports: [RouterLink, RouterLinkActive, CommonModule],
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.scss']
 })

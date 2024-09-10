@@ -10,7 +10,7 @@
     
             <!-- Buttons to View -->
             <div class="project-links">
-                <a href="" target="_blank">
+                <a [routerLink]="['/portfolio', project.id]" routerLinkActive="active" ariaCurrentWhenActive="page">
                     <h3>See Detailed Report</h3>
                 </a>
                 <a href={{project.viewContent}} target="_blank">

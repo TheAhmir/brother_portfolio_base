@@ -13,6 +13,7 @@ export class BackendService {
       query: gql`
       query GetProjectsWithLimit {
         projects {
+          id
           headline
           description
           videoUrl
@@ -23,6 +24,27 @@ export class BackendService {
         }
       }
       `
+    });
+  }
+
+  getProjectById(id: string): Observable<any> {
+    return this.apollo.query({
+      query: gql`
+      query GetProjectById($id: ID!) {
+        project(where: {id: $id}) {
+          headline
+          description
+          videoUrl
+          viewContent
+          images {
+            url
+          }
+        }
+      }
+      `,
+      variables: {
+        id: id
+      }
     });
   }
 
