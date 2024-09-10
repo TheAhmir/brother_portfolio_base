@@ -25,7 +25,7 @@
         <div *ngIf="project.images && !project.safeVideoUrl" class="image-container">
             <div class="images">
                 <div *ngFor="let image of project.images; index as i; first as isFirst">
-                    <img [src]="image.url" class="img" width="350" height="207">
+                    <img [ngClass]="{'single-image': project.images.length === 1}" [src]="image.url" class="img" width="350" height="207">
                 </div>
             </div>
         </div>
