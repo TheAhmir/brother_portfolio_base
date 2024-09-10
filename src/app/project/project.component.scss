@@ -91,6 +91,9 @@
 }
 
 @media (max-width: 1320px) {
+    .media-container {
+        justify-content: center;
+    }
     .project-video {
         width: 400px;
         height: 300px;

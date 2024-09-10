@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BackendService } from '../backend.service';
+import { FooterComponent } from "../footer/footer.component";
 
 @Component({
   selector: 'app-project-detail',
   standalone: true,
-  imports: [],
+  imports: [FooterComponent],
   templateUrl: './project-detail.component.html',
   styleUrl: './project-detail.component.scss'
 })
