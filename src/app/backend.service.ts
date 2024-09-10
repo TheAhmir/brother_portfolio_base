@@ -35,6 +35,9 @@ export class BackendService {
           headline
           description
           videoUrl
+          detailedDescription {
+            htmls
+          }
           viewContent
           images {
             url

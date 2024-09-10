@@ -1,2 +1,6 @@
-<h1>{{project.headline}}</h1>
-<p>project-detail works!</p>
+<div class="detailed-project-page">
+    <div class="header">
+        <h1>{{project.headline}}</h1>
+    </div>
+    <div [innerHTML]="project.detailedDescription.html"></div>
+</div>
