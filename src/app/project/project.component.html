@@ -1,45 +1,47 @@
-<div *ngFor="let project of projects; index as i; first as isFirst" class="project-container">
-    <div class="project-text-container">
-        <div class="project-text">
-            <!-- Headline -->
-            <h1>{{project.headline}}</h1>
-            <!-- Description -->
-            <p>{{project.description}}</p>
+<div style="overflow: auto;">
+    <div *ngFor="let project of projects" class="project-container">
+        <div class="project-text-container">
+            <div class="project-text">
+                <!-- Headline -->
+                <h1>{{project.headline}}</h1>
+                <!-- Description -->
+                <p>{{project.description}}</p>
+            </div>
+    
+            <!-- Buttons to View -->
+            <div class="project-links">
+                <a href="" target="_blank">
+                    <h3>See Detailed Report</h3>
+                </a>
+                <a href={{project.viewContent}} target="_blank">
+                    <h3>Check out {{project.headline}}</h3>
+                </a>
+            </div>
+    
         </div>
-
-        <!-- Buttons to View -->
-        <div class="project-links">
-            <a href="" target="_blank">
-                <h3>See Detailed Report</h3>
-            </a>
-            <a href={{project.viewContent}} target="_blank">
-                <h3>Check out {{project.headline}}</h3>
-            </a>
-        </div>
-
-    </div>
-
-    <div class="media-container">
-        <!-- Photos -->
-    <div *ngIf="project.images && !project.safeVideoUrl" class="image-container">
-        <div class="images">
-            <div *ngFor="let image of project.images; index as i; first as isFirst">
-                <img [src]="image.url" class="img" width="350" height="207">
+    
+        <div class="media-container">
+            <!-- Photos -->
+        <div *ngIf="project.images && !project.safeVideoUrl" class="image-container">
+            <div class="images">
+                <div *ngFor="let image of project.images; index as i; first as isFirst">
+                    <img [src]="image.url" class="img" width="350" height="207">
+                </div>
             </div>
         </div>
-    </div>
-
-    <!-- Video Url-->
-    <div *ngIf="project.safeVideoUrl">
-        <iframe 
-    *ngIf="project.safeVideoUrl" 
-    class="project-video" 
-    width="700" 
-    height="415" 
-    [src]="project.safeVideoUrl"
-    title="YouTube video player" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-  </iframe>
-    </div>
+    
+        <!-- Video Url-->
+        <div *ngIf="project.safeVideoUrl">
+            <iframe 
+        *ngIf="project.safeVideoUrl" 
+        class="project-video" 
+        width="700" 
+        height="415" 
+        [src]="project.safeVideoUrl"
+        title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+        </div>
+        </div>
     </div>
 </div>

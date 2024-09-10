@@ -14,7 +14,7 @@
     padding: 1rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    overflow-x: hidden;
+    overflow: auto;
     
     &:nth-child(odd) {
         flex-direction: row-reverse;
